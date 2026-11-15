@@ -1,17 +1,14 @@
-# Sistema de Gestão de Estacionamento
+## ⚙️ Como Executar o Projeto
 
-Projeto desenvolvido em Java para a gestão de um parque de estacionamento com 30 vagas.
+### 1. Configurar a Base de Dados
+1. Abra o seu MySQL Workbench (ou phpMyAdmin).
+2. Execute o script SQL que se encontra na pasta `sql/parque_db.sql`. 
+   *(Isto criará a base de dados `parque_db` e as 30 vagas iniciais).*
 
-## Tecnologias Utilizadas
-* **Java** (Swing + FlatLaf para a interface gráfica)
-* **MySQL** (Base de dados relacional)
-* **JDBC** e padrão **DAO** (Data Access Object)
+### 2. Configurar a Conexão no Java
+1. Importe o projeto para o Eclipse.
+2. Abra a classe `ConexaoBD.java` (localizada em `src/persistencia`).
+3. Altere as variáveis `UTILIZADOR` e `PASSWORD` para as suas credenciais locais do MySQL.
 
-## Como executar o projeto
-1. Importa o projeto para o Eclipse.
-2. Executa o script SQL que está na pasta `sql` (se tiveres criado) no teu MySQL para criar a base de dados.
-3. Abre a classe `ConexaoBD.java` e altera o utilizador e a password para as tuas credenciais do MySQL.
-4. Executa a classe `Principal.java` para iniciar o sistema.
-
-## Autor
-* Valther Canze
+### 3. Executar
+1. Execute a classe `Principal.java` (localizada em `src`, fora de qualquer pacote).
